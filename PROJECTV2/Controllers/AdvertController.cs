@@ -26,7 +26,7 @@ namespace PROJECTV2.Controllers
 
 
 
-            for (int i = 0; i < htmlDocument.DocumentNode.SelectNodes("//ul[@class='vitrin-list clearfix']//li//a//span").Count+3; i++) // Ana sayfa ilanlarını dolaşması için bir for döngüsü oluşturuldu.
+            for (int i = 0; i < htmlDocument.DocumentNode.SelectNodes("//ul[@class='vitrin-list clearfix']//li//a//span").Count + 3; i++) // Ana sayfa ilanlarını dolaşması için bir for döngüsü oluşturuldu.
             {
 
 
