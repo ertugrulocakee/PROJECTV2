@@ -13,10 +13,10 @@ namespace PROJECTV2.Model
             HtmlDocument htmlDocument = htmlWeb.Load(detailLink);
 
 
-            if (htmlDocument.DocumentNode.SelectSingleNode("//div[@class='classifiedInfo']//h3") != null)
+            if (htmlDocument.DocumentNode.SelectSingleNode("//div[@class='classifiedInfo']//h3[@prop='text']") != null)
             {
 
-                return htmlDocument.DocumentNode.SelectSingleNode("//div[@class='classifiedInfo']//h3").InnerText;
+                return htmlDocument.DocumentNode.SelectSingleNode("//div[@class='classifiedInfo']//h3[@prop='text']").InnerText;
 
             }
 

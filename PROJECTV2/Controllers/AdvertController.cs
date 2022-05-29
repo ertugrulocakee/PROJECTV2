@@ -19,14 +19,14 @@ namespace PROJECTV2.Controllers
 
             List<Advert> adverts = new List<Advert>(); // İlan listesi tanımlandı.
 
-            var url = "https://www.sahibinden.com"; // Site URL tanımlandı.
+            var url = "https://www.sahibinden.com/"; // Site URL tanımlandı.
 
             HtmlWeb htmlWeb = new HtmlWeb();
             HtmlDocument htmlDocument = htmlWeb.Load(url);
 
 
 
-            for (int i = 0; i < htmlDocument.DocumentNode.SelectNodes("//ul[@class='vitrin-list clearfix']//li//a//span").Count + 3; i++) // Ana sayfa ilanlarını dolaşması için bir for döngüsü oluşturuldu.
+            for (int i = 0; i < htmlDocument.DocumentNode.SelectNodes("//ul[@class='vitrin-list clearfix']//li//a//span").Count+3; i++) // Ana sayfa ilanlarını dolaşması için bir for döngüsü oluşturuldu.
             {
 
 
